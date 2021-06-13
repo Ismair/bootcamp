@@ -4,15 +4,22 @@ server:
     context-path: /bootcamp
 
 spring:
+#  datasource:
+#    driver-class-name: org.postgresql.Driver
+#    url: jdbc:postgresql://localhost:5432/postgres
+#    username: postgres
+#    password: 123456
+
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/postgres
-    username: postgres
-    password: 123456
+    url: postgres://priltpjvyrdkla:d778ebc2fa1259f50340cd19375ca290bb77e209c8eb4314ea91916daef677b8@ec2-54-225-228-142.compute-1.amazonaws.com:5432/ddsu4ha6cmgsl5
+    username: priltpjvyrdkla
+    password: d778ebc2fa1259f50340cd19375ca290bb77e209c8eb4314ea91916daef677b8
+
   jpa:
     show-sql: true
     database-plataform: org.hibernate.dialect.PostgreSQLDialect
-    generate-ddl: false
+    generate-ddl: true
     hibernate:
       ddl-auto: none
 
